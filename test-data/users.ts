@@ -8,6 +8,12 @@ export const users = {
 
         password: ENV.PASSWORD
 
-    }
+    },
 
+    locked: {
+
+        username: ENV.USERNAME_locked,
+        password: ENV.PASSWORD_lockedgit ls
+
+    }
 };

@@ -2,12 +2,11 @@
   "config": {
     "argv": [
       "/usr/local/bin/node",
-      "/Users/anishkumarpandey/my-test-project/node_modules/.bin/playwright",
-      "test",
-      "--headed"
+      "/Users/nidhijain/Learning-Playwright/node_modules/.bin/playwright",
+      "test"
     ],
-    "configFile": "/Users/anishkumarpandey/my-test-project/playwright.config.ts",
-    "rootDir": "/Users/anishkumarpandey/my-test-project/tests",
+    "configFile": "/Users/nidhijain/Learning-Playwright/playwright.config.ts",
+    "rootDir": "/Users/nidhijain/Learning-Playwright/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -23,7 +22,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/Users/anishkumarpandey/my-test-project/test-results",
+        "outputDir": "/Users/nidhijain/Learning-Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -31,7 +30,7 @@
         },
         "id": "Chromium",
         "name": "Chromium",
-        "testDir": "/Users/anishkumarpandey/my-test-project/tests",
+        "testDir": "/Users/nidhijain/Learning-Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,7 +58,7 @@
         null
       ],
       [
-        "/Users/anishkumarpandey/my-test-project/node_modules/allure-playwright/dist/cjs/index.js",
+        "/Users/nidhijain/Learning-Playwright/node_modules/allure-playwright/dist/cjs/index.js",
         null
       ]
     ],
@@ -98,12 +97,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1002,
+                  "duration": 2571,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-06-26T02:26:44.995Z",
+                  "startTime": "2026-06-30T11:11:44.368Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -121,8 +120,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-06-26T02:26:44.771Z",
-    "duration": 1645.332,
+    "startTime": "2026-06-30T11:11:44.205Z",
+    "duration": 5980.254000000001,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
