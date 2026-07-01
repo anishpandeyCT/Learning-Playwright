@@ -15,6 +15,7 @@ export const users = {
     standard: {
         username: getEnvVar('USERNAME'),
         password: getEnvVar('PASSWORD')
+    
     },
     locked: {
         username: getEnvVar('LOCKED_USERNAME'),
@@ -23,9 +24,4 @@ export const users = {
         
     }
     
-
-        username: ENV.USERNAME_locked,
-        password: ENV.PASSWORD_lockedgit ls
-
-    }
 };
