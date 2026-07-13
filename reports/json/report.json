@@ -6,8 +6,8 @@
       "test",
       "/tests"
     ],
-    "configFile": "/Users/anishkumarpandey/my-test-project/playwright.config.ts",
-    "rootDir": "/Users/anishkumarpandey/my-test-project/tests",
+    "configFile": "/Users/nidhijain/Learning-Playwright/playwright.config.ts",
+    "rootDir": "/Users/nidhijain/Learning-Playwright/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -23,7 +23,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/Users/anishkumarpandey/my-test-project/test-results",
+        "outputDir": "/Users/nidhijain/Learning-Playwright/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -31,7 +31,7 @@
         },
         "id": "Chromium",
         "name": "Chromium",
-        "testDir": "/Users/anishkumarpandey/my-test-project/tests",
+        "testDir": "/Users/nidhijain/Learning-Playwright/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,7 +59,7 @@
         null
       ],
       [
-        "/Users/anishkumarpandey/my-test-project/node_modules/allure-playwright/dist/cjs/index.js",
+        "/Users/nidhijain/Learning-Playwright/node_modules/allure-playwright/dist/cjs/index.js",
         null
       ]
     ],

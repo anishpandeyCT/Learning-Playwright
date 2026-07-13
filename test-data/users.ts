@@ -24,4 +24,8 @@ export const users = {
     }
     
 
+        username: ENV.USERNAME_locked,
+        password: ENV.PASSWORD_lockedgit ls
+
+    }
 };
