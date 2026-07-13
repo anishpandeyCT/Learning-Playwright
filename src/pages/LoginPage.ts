@@ -1,14 +1,19 @@
-import { expect, Page } from "@playwright/test";
+import { expect, Locator, Page } from "@playwright/test";
 import { BasePage } from "./BasePage";
 
 export class LoginPage extends BasePage {
+    username: Locator;
+    password: Locator;
+    loginBtn: Locator;
+    errorMsg: Locator;
+
     constructor(page: Page) {
         super(page);
+        this.username = this.page.getByRole('textbox', { name: 'Username' });
+        this.password = this.page.getByRole('textbox', { name: 'Password' });
+        this.loginBtn = this.page.getByRole('button');
+        this.errorMsg = this.page.locator('[data-test="error"]');
     }
-
-    username = this.page.getByRole('textbox', { name: 'Username' });
-    password = this.page.getByRole('textbox', { name: 'Password' });
-    loginBtn = this.page.getByRole('button');
 
     async open() {
         await this.goto("/");
@@ -20,8 +25,13 @@ export class LoginPage extends BasePage {
         await this.loginBtn.click();
     }
 
-    async verifyLogin(){
+    async verifyLogin() {
         await expect(this.page).toHaveURL(/inventory/);
+    }
+
+    async getError() {
+        const actualErrorMsg = await this.errorMsg.textContent();
+        return actualErrorMsg;
     }
 
 }

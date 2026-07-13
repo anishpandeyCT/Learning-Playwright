@@ -1,0 +1,14 @@
+# Environment
+.env
+
+# Node
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+reports/
+
+# Allure
+allure-results/
+allure-report/
