@@ -7,9 +7,9 @@ export abstract class BasePage {
         this.page = page;
     }
 
-    async goto(path: string = '/') {
-        await this.page.goto(path);
-    }
+    // async goto(path: string = '/') {
+    //     await this.page.goto(path);
+    // }
 
     async getTilte() {
         await this.page.title();

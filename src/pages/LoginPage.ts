@@ -9,15 +9,15 @@ export class LoginPage extends BasePage {
 
     constructor(page: Page) {
         super(page);
-        this.username = this.page.getByRole('textbox', { name: 'Username' });
-        this.password = this.page.getByRole('textbox', { name: 'Password' });
-        this.loginBtn = this.page.getByRole('button');
-        this.errorMsg = this.page.locator('[data-test="error"]');
+        this.username = page.getByRole('textbox', { name: 'Username' });
+        this.password = page.getByRole('textbox', { name: 'Password' });
+        this.loginBtn = page.getByRole('button');
+        this.errorMsg = page.locator('[data-test="error"]');
     }
 
-    async open() {
-        await this.goto("/");
-    }
+    // async open() {
+    //     await this.goto("/");
+    // }
 
     async loginUser(user: string, pass: string) {
         await this.username.fill(user);
